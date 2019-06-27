@@ -1,4 +1,4 @@
-section data
+section .data
 	inNum1 db 'Ingrese el primer numero', 0xA
 	leng_n1 equ $-inNum1
 	inNum2 db 'Ingrese el segundo numero',0xA
@@ -10,7 +10,7 @@ section  .bss
 	entry2 resb 1
 	result resb 1 
 section .text
-	global _start
+	global _start:
 			_start:
 					mov eax, 4
 					mov ebx, 1
