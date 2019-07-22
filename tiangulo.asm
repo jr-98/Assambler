@@ -26,7 +26,7 @@ section .text
 		loop l1
 		jmp salir
 	imprimir_asterisco:
-		;permite llamr al procedimintoe imprimif _astericos
+		;permite llamr al procedimintoe imprimif _astericos	
 		mov eax, 4
 		mov ebx, 1
 		mov ecx, asteriscos
