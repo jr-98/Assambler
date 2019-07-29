@@ -17,7 +17,7 @@ section .bss
 section .txt
 	global _start
 			_start:
-				mov eax, 8    ;sevicio para abrir el archivo y poder escribir en el 
+				mov eax, 8    ;sevicio para abrir el archivo y poder escribir en el asemas crear directorios
 				mov ebx, file ;La adireccion del archivo
 				mov ecx, 1    ;aperation of only read
 				mov edx, 200h    ;permission

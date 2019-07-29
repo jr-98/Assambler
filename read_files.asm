@@ -18,7 +18,7 @@ section .txt
 	global _start
 			_start:
 				mov eax, 5    ;sevicio para abrir el archivo
-				mov ebx, file ;L adireccion del archivo
+				mov ebx, file ;L adireccion del archivo o identificador
 				mov ecx, 0    ;aperation of only read
 				mov edx, 0    ;permission
 				int 80h
@@ -31,7 +31,7 @@ section .txt
 				write msj, leng_msj
 
 				mov eax, 3 
-				mov ebx, [idarchivo]
+				mov ebx, [idarchivo] ;input 
 				mov ecx, texto
 				mov edx, 20
 				int 80h
