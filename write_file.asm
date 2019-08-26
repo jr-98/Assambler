@@ -9,7 +9,7 @@
 segment .data
 	msj db "Escribiendo en un archivo en el disco duro",0xA
 	leng_msj equ $-msj
-	file db "/home/jonathanrtj/Documents/texto.txt",0
+	file db "/home/jonathanrtj/Documents/practicas/Assambler/Practica2.0/txtEjercicio3.txt",0
 segment .bss
 	texto resd 30       ;variable que almacena el contenido del archivo
 	idarchivo resd 1     ;el identificador que se obtiene del archivo, es el escudo fisico
